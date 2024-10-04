@@ -1,6 +1,6 @@
-import helmet from 'helmet';
-import rateLimit from 'express-rate-limit';
-
+const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
+const express = require('express');
 
 function setupMiddlewares(app) {
   app.use(helmet());
